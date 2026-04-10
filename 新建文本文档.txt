@@ -1,0 +1,40 @@
+https://github.com/MScholtes/PS2EXE
+PS C:\> Install-Module ps2exe
+
+Install-Module ps2exe -Scope CurrentUser
+Import-Module ps2exe
+
+查看ps2exe目录
+Get-Module -ListAvailable ps2exe
+
+目录: C:\Users\Johnny\Documents\WindowsPowerShell\Modules
+
+
+
+
+
+
+=======================================================
+
+✅ 一步解决（临时解锁，最安全）
+
+直接在当前窗口执行：
+
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+👉 含义：
+
+只对当前 PowerShell 生效
+
+关闭窗口自动恢复
+
+最安全的方式
+然后按顺序执行
+1️⃣ 导入模块
+Import-Module ps2exe
+2️⃣ 打包 EXE
+Invoke-PS2EXE .\switch-ip-gui.ps1 .\网络切换工具.exe -noConsole -requireAdmin
+
+Invoke-PS2EXE .\switch-ip-gui.ps1 .\网络切换工具.exe -noConsole -requireAdmin
+
+Invoke-PS2EXE .\switch-ip-gui.ps1 .\网络切换工具.exe -noConsole -requireAdmin -iconFile .\icon.ico
